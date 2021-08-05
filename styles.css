@@ -1,0 +1,459 @@
+body {
+    /* font-family: 'Alata',
+        sans-serif; */
+    font-size: 18px;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    text-transform: capitalize;
+    font-family: 'Josefin Sans',
+        sans-serif;
+}
+
+#menu {
+    display: none
+}
+
+#home {
+    height: 90vh;
+    background-image: url(images/desktop/image-hero.jpg);
+    background-position: bottom right;
+    background-size: cover;
+    position: relative
+}
+
+#black {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+    height: 100%;
+    background-color: black;
+    opacity: 0.46;
+}
+
+#header {
+    margin: 0 auto;
+    width: 80vw;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+#logo {
+    font-size: 35px;
+    font-family: 'Alata',
+        sans-serif;
+    font-weight: 300;
+}
+
+#links {
+    margin-top: 35px;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+
+    padding: 0 10px;
+}
+
+#links a:hover {
+    border: 1px white;
+    border-bottom: solid;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+#text1 {
+    font-size: 63px;
+    text-transform: uppercase;
+    position: relative;
+    width: 40vw;
+
+    top: 13vh;
+    left: 15vw;
+    padding: 10px 39px;
+    border: 2px solid white;
+}
+
+#inter {
+    width: 80vw;
+    margin: 110px auto 0;
+    position: relative;
+    height: 100vh;
+}
+
+#inter img,
+#inter div {
+    position: absolute;
+}
+
+#inter div {
+    background-color: white;
+    padding: 50px;
+    right: 0;
+    width: 34vw;
+    color: black;
+    top: 30vh;
+}
+
+#inter h1 {
+    font-size: 50px;
+    text-align: center;
+}
+
+/* ======================================= */
+#head2 {
+    width: 80vw;
+    margin: 0 auto;
+    position: relative;
+}
+
+#head2 a {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 20px;
+    right: 0;
+    color: black;
+    top: 30px;
+    position: absolute;
+    border: 1px black solid;
+    text-transform: uppercase;
+}
+
+#head2 a:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+#head2 h1 {
+    text-transform: uppercase;
+    color: black;
+    display: inline-block;
+    font-size: 50px;
+
+}
+
+#grid img:hover {
+    opacity: 0.5;
+    transition: 0.3s;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -ms-transition: 0.3s;
+    -o-transition: 0.3s;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    grid-row-gap: 10px;
+    grid-column-gap: 10px;
+    width: 80vw;
+    margin: 0 auto;
+}
+
+#grid div {
+    position: relative;
+}
+
+#grid div span {
+    position: absolute;
+    bottom: 20px;
+    text-transform: uppercase;
+    left: 10px;
+    font-size: 24px;
+    z-index: 2;
+}
+
+/* ====================================== */
+#foot {
+    background-color: rgba(0, 0, 0, 0.952);
+    margin-top: 20px;
+}
+
+#footer {
+    width: 80vw;
+    padding: 30px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer a {
+    color: white;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+#footer a:hover {
+    border-bottom: 1px solid white;
+}
+
+#links2 img {
+    padding: 15px 5px;
+}
+
+#links2 img:hover {
+    text-decoration: underline;
+}
+
+#rights {
+    margin-bottom: 10px;
+}
+
+@media screen and (min-width:1500px) {
+    body {
+        font-size: 35px
+    }
+
+    #logo {
+        font-size: 50px;
+    }
+
+    #text1 {
+        font-size: 100px;
+
+    }
+
+    #inter {
+        height: 86vh;
+    }
+
+    #inter img {
+        width: 60vw;
+    }
+
+    #inter div {
+        width: 34vw;
+    }
+
+    #inter h1 {
+        font-size: 57px;
+    }
+
+    #grid img {
+        width: 18vw;
+    }
+}
+
+@media screen and (max-width:1025px) {
+    #grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width:769px) {
+    #grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #inter img {
+        width: 75vw;
+    }
+
+    #inter div {
+        width: 65vw;
+    }
+
+    #inter {
+        height: 80vh;
+    }
+}
+
+@media screen and (max-width:990px) {
+    #text1 {
+        font-size: 42px
+    }
+
+    #links a {
+        padding: 0 2px;
+    }
+
+    #links {
+        display: none;
+    }
+
+    #menu {
+        display: flex;
+        width: 50px;
+    }
+
+    #footer {
+        flex-flow: column wrap;
+        text-align: center;
+    }
+
+    #footer span {
+        display: block;
+        padding-top: 20px;
+        font-size: 23px;
+    }
+
+    #footer h2 {
+        font-size: 35px;
+    }
+}
+
+@media screen and (max-width:541px) {
+    #grid {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80vw;
+    }
+
+    #grid img {
+        width: 85vw;
+    }
+
+    #inter img {
+        width: 75vw;
+    }
+
+    #inter div {
+        width: 65vw;
+    }
+
+    #inter {
+        height: 80vh;
+    }
+
+    #head2 h1 {
+        font-size: 33px;
+    }
+
+    #head2 a {
+        top: 0
+    }
+
+    #text1 {
+        font-size: 36px;
+    }
+
+    #logo {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width:480px) {
+    #text1 {
+        font-size: 30px;
+    }
+
+    #head2 a {
+        padding: 13px;
+    }
+}
+
+@media screen and (max-width:425px) {
+    #head2 h1 {
+        font-size: 26px;
+    }
+
+    #head2 {
+        margin-top: 14px;
+    }
+}
+
+@media screen and (max-width:380px) {
+    #head2 h1 {
+        font-size: 22px;
+    }
+
+    #home {
+        background-image: url(images/mobile/image-hero.jpg);
+        background-position: 487px;
+        background-size: cover;
+
+    }
+
+    #head2 {
+        margin-top: 77px;
+    }
+
+    #inter h1 {
+        font-size: 40px
+    }
+
+    #text1 {
+        font-size: 25px
+    }
+
+    #menu {
+        width: 40px;
+    }
+}
+
+@media screen and (max-width:320px) {
+    #head2 h1 {
+        font-size: 18px;
+    }
+
+    #head2 {
+        margin-top: 140px;
+    }
+
+    #inter h1 {
+        font-size: 33px
+    }
+
+    #text1 {
+        font-size: 22px
+    }
+
+    #menu {
+        width: 30px;
+        height: 20px
+    }
+
+    #grid div span {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:285px) {
+    #head2 h1 {
+        font-size: 18px;
+    }
+
+    #head2 a {
+        font-size: 10px
+    }
+
+    #inter div {
+        padding: 21px
+    }
+
+    #inter h1 {
+        font-size: 27px
+    }
+
+    #text1 {
+        font-size: 19px
+    }
+
+    #footer span {
+        font-size: 12px;
+    }
+
+
+    #grid div span {
+        font-size: 16px;
+    }
+
+    #links2 img {
+        padding: 15px 2px;
+    }
+}
