@@ -109,6 +109,7 @@ body {
     text-align: center;
 }
 
+
 /* ======================================= */
 #head2 {
     width: 80vw;
@@ -363,7 +364,7 @@ body {
     }
 
     #head2 {
-        margin-top: 14px;
+        margin-top: 34px;
     }
 }
 
@@ -374,13 +375,10 @@ body {
 
     #home {
         background-image: url(images/mobile/image-hero.jpg);
-        background-position: 487px;
-        background-size: cover;
-
     }
 
     #head2 {
-        margin-top: 77px;
+        margin-top: 50px;
     }
 
     #inter h1 {
@@ -388,11 +386,13 @@ body {
     }
 
     #text1 {
-        font-size: 25px
+        font-size: 25px;
+        top: 34vh
     }
 
     #menu {
-        width: 40px;
+        width: 30px;
+        height: 20px;
     }
 }
 
@@ -402,7 +402,7 @@ body {
     }
 
     #head2 {
-        margin-top: 140px;
+        margin-top: 55px;
     }
 
     #inter h1 {
@@ -413,47 +413,22 @@ body {
         font-size: 22px
     }
 
-    #menu {
-        width: 30px;
-        height: 20px
-    }
-
     #grid div span {
         font-size: 16px;
     }
 }
 
-@media screen and (max-width:285px) {
+@media screen and (max-width:295px) {
+
+    #head2 {
+        margin-top: 210px;
+    }
+
     #head2 h1 {
-        font-size: 18px;
+        font-size: 15px
     }
 
     #head2 a {
-        font-size: 10px
-    }
-
-    #inter div {
-        padding: 21px
-    }
-
-    #inter h1 {
-        font-size: 27px
-    }
-
-    #text1 {
-        font-size: 19px
-    }
-
-    #footer span {
-        font-size: 12px;
-    }
-
-
-    #grid div span {
-        font-size: 16px;
-    }
-
-    #links2 img {
-        padding: 15px 2px;
+        padding: 9px;
     }
 }
